@@ -21,6 +21,7 @@ body{
     display: inline-block;
     width: 100%;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 .product-row .product-container{
     position: relative;
@@ -54,19 +55,29 @@ body{
     content: url("../img/6b.webp");
 }
 /* FINE hover seconda riga */
-
-/* percentuale sconto */
-.product-sale-value{
+.product-container > .clearfix > span{
+    padding: 4px 7px;
+    margin-right: 3px;
+}
+.product-container > .clearfix
+{
 	position: absolute;
-	top: 80%;
-	left: 0;
-	background-color: #ef254d;
-	padding: 5px 8px;
 	color: white;
 	font-size: 0.8em;
 	font-weight: bold;
+    bottom:90px;
+    left:0;
 }
-/* FINE percentuale sconto */
+
+.product-container > .clearfix > .product-sale-value{
+    background-color: #ef254d;
+    float:left
+}
+
+.product-container > .clearfix > .product-sostenibility{
+    background-color: #00875a;
+    float:left
+}
 
 /* descrione prodotto */
 .product-row .product-container img{
