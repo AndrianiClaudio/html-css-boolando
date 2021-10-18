@@ -1,0 +1,130 @@
+*{
+    margin: 0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 85%;
+    margin-top: 20px;
+    line-height: 1.05em;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+li.product-item{
+    position: relative;
+    width: 32%;
+    float:left;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+li.product-item:nth-of-type(3n+2){
+    margin: 0 2%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:red;
+}
+
+/* immagini */
+.product-image{
+    width: 100%;
+}
+.product-row:first-of-type .product-item:first-child .product-image:hover{
+    content: url("../../img/1b.webp");
+
+}
+.product-row:first-of-type .product-item:nth-child(2) .product-image:hover{
+    content: url("../../img/2b.webp");
+}
+.product-row:first-of-type .product-item:last-child .product-image:hover{
+    content: url("../../img/3b.webp");
+}
+
+.product-row:nth-of-type(2) .product-item:first-child .product-image:hover{
+    content: url("../../img/4b.webp");
+}
+.product-row:nth-of-type(2) .product-item:nth-child(2) .product-image:hover{
+    content: url("../../img/5b.webp");
+}
+.product-row:nth-of-type(2) .product-item:last-child .product-image:hover{
+    content: url("../../img/6b.webp");
+}
+
+.product-row .product-item:nth-child(4) .product-image:hover{
+    content: url("../../img/4b.webp");
+}
+.product-row .product-item:nth-child(5) .product-image:hover{
+    content: url("../../img/5b.webp");
+}
+.product-row .product-item:last-child .product-image:hover{
+    content: url("../../img/6b.webp");
+}
+/* FINE immagini */
+
+/* descrizione prodototto */
+.product-brand,
+.product-name{
+    display: block;
+}
+.product-brand{
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+.product-name{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price,
+.product-price-sale{
+    font-size: 0.8em;
+}
+.product-price-sale
+{
+    color: #ef254d;
+    font-weight: bold;
+}
+.product-price{
+    text-decoration: line-through;
+}
+/* FINE descrizione prodototto */
+.product-item > .clearfix{
+    position: absolute;
+    bottom:80px;
+    left:0;
+}
+
+.product-sostenibility,
+.product-sale-value{
+    float: left;
+    font-size: 0.75em;
+    font-weight: bold;
+    color:white;
+    padding: 3px 8px;
+}
+
+.product-sostenibility{
+    background-color: #00875a;
+}
+.product-sale-value{
+    background-color: #ef254d;
+    margin-right: 3px;
+}
+
+.product-favorite{
+    position: absolute;
+	background-color: white;
+	font-size: 1.3em;
+	padding: 10px;
+	top: 15px;
+	right: 0;
+}
