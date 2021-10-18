@@ -27,16 +27,6 @@ body{
 .product-row .product-container:nth-child(2){
     margin: 0 1.25%;
 }
-.product-row .product-container img{
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.product-row .product-container .product-brand,
-.product-row .product-container .product-name{
-    display: block;
-}
-/* contenuto immagini*/
 /* hover prima riga */
 .product-row:first-of-type .product-container:first-child img:hover
 {
@@ -49,8 +39,15 @@ body{
     content: url("../img/3b.webp");
 }
 /* FINE hover prima riga */
-/* FINE contenuto immagini */
-/* span - descrione prodotto */
+/* descrione prodotto */
+.product-row .product-container img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.product-row .product-container .product-brand,
+.product-row .product-container .product-name{
+    display: block;
+}
 .product-row .product-container .product-brand{
     text-transform: capitalize;
     font-size: 0.9em;
@@ -74,5 +71,5 @@ body{
 .product-row .product-container .product-price-no-discount{
     text-decoration: line-through;
 }
-/* FINE span - descrizione prodotto */
+/* FINE sdescrizione prodotto */
 /*FINE riga */
