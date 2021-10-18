@@ -23,6 +23,7 @@ body{
     margin-bottom: 30px;
 }
 .product-row .product-container{
+    position: relative;
     float:left;
     width: 32.5%;
 }
@@ -53,6 +54,20 @@ body{
     content: url("../img/6b.webp");
 }
 /* FINE hover seconda riga */
+
+/* percentuale sconto */
+.product-sale-value{
+	position: absolute;
+	top: 80%;
+	left: 0;
+	background-color: #ef254d;
+	padding: 5px 8px;
+	color: white;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+/* FINE percentuale sconto */
+
 /* descrione prodotto */
 .product-row .product-container img{
     width: 100%;
