@@ -55,11 +55,19 @@ body{
     content: url("../img/6b.webp");
 }
 /* FINE hover seconda riga */
+.product-container > .product-favorite{
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    top: 15px;
+    right: 0;
+}
+
 .product-container > .clearfix > span{
     padding: 4px 7px;
     margin-right: 3px;
 }
-.product-container > .clearfix
+.product-container > .clearfix 
 {
 	position: absolute;
 	color: white;
