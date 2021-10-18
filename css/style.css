@@ -15,10 +15,16 @@ body{
     display: table;
     clear: both;
 }
+a:hover{
+    color:red;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
 
 /* riga */
 .product-row{
-    display: inline-block;
     width: 100%;
     margin-bottom: 30px;
     overflow: hidden;
@@ -43,8 +49,8 @@ body{
     content: url("../img/3b.webp");
 }
 /* FINE hover prima riga */
-/* hover seconda riga */
 .product-row:nth-of-type(2) .product-container:first-child img:hover
+/* hover seconda riga */
 {
     content:url("../img/4b.webp");
 }
@@ -55,19 +61,20 @@ body{
     content: url("../img/6b.webp");
 }
 /* FINE hover seconda riga */
-.product-container > .product-favorite{
+.product-row > .product-container > .product-favorite{
     position: absolute;
     background-color: white;
-    padding: 15px;
+    font-size: 1.3em;
+    padding: 10px;
     top: 15px;
     right: 0;
 }
 
-.product-container > .clearfix > span{
+.product-row > .product-container > .clearfix > span{
     padding: 4px 7px;
     margin-right: 3px;
 }
-.product-container > .clearfix 
+.product-row > .product-container > .clearfix 
 {
 	position: absolute;
 	color: white;
@@ -77,12 +84,12 @@ body{
     left:0;
 }
 
-.product-container > .clearfix > .product-sale-value{
+.product-row > .product-container > .clearfix > .product-sale-value{
     background-color: #ef254d;
     float:left
 }
 
-.product-container > .clearfix > .product-sostenibility{
+.product-row > .product-container > .clearfix > .product-sostenibility{
     background-color: #00875a;
     float:left
 }
